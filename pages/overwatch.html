@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Information about Overwatch Esports">
+    <meta name="keywords" content="Esports, Overwatch, Teams, Statistics, Records">
+
+    <title>Esports - Overwatch 2</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <script type="text/javascript">
+      <!--
+        let index = 0;
+        var banner_imgs = ["../img/ow1.png", "../img/ow2.png", "../img/ow3.png","../img/ow4.png","../img/ow5.png"];
+        // Cycle through banner images sequentially
+        function cycleBanners() {
+          document.getElementById('banners').src = window.banner_imgs[index];
+          index = (index + 1) % window.banner_imgs.length;
+          setTimeout(cycleBanners, 5000);
+        }
+
+        // Allow user to select different team tables.
+        function showTab(tabId) {
+          // Hides all tab contents until one is selected.
+          const tabContents = document.querySelectorAll('.tab-content');
+          tabContents.forEach(tabContent => {
+            tabContent.style.display = 'none';
+          });
+
+          // Remove active class from all buttons
+          const tabButtons = document.querySelectorAll('.tab-button');
+          tabButtons.forEach(button => {
+            button.classList.remove('active');
+          });
+
+          // Shows the tab selected by the user
+          document.getElementById(tabId).style.display = 'block';
+          // Sets the clicked tab to active
+          event.target.classList.add('active');
+        }
+
+        // Ensure the default tab content is visible
+        document.addEventListener('DOMContentLoaded', () => {
+          document.getElementById('team1').style.display = 'block';
+        });
+      //-->
+    </script>
+
+  </head>
+
+  <body onload="cycleBanners()">
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <ul class="navbar-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="league_of_legends.html">League of Legends</a></li>
+      <li><a href="dota.html">Dota 2</a></li>
+      <li><a href="counter-strike.html">Counter-Strike 2</a></li>
+      <li><a href="valorant.html">Valorant</a></li>
+      <li><a href="overwatch.html">Overwatch 2</a></li>
+    </ul>
+  </nav>
+
+    <!-- Start Page Content -->
+    <main class="content">
+      <div class="text-area">
+
+        <!-- Banner Images -->
+        <div class="banner">
+          <img id="banners" src="../img/ow1.png" alt="Overwatch Picture Reel">
+        </div>
+
+        <!-- Game Info -->
+        <h1>Overwatch 2</h1>
+        <p>
+          Released on August 10, 2023 and is free-to-play.
+        </p>
+        <p>
+          Overwatch 2 is a team-based hero shooter. Each team has five players and allows players to select a hero
+          with unique abilities. Heroes are divided into roles: DPS, Tank, and Support. Depending on the game mode,
+          team compositions may restrict the number of each role available. For example, in competitive game modes,
+          the team composition must include 2 DPS, 2 Support, and 1 Tank. Other game modes, may have significantly
+          different rules and restrictions that are unique to the mode. For instance, "Mystery Heroes" from the
+          Arcade playlist, automatically and randomly assigns a hero to each player which randomizes again each time
+          the player dies and respawns.
+        </p>
+        <p>
+          The first Overwatch game gained immense popularity in the esports scene through its franchised league
+          "The Overwatch League" starting in 2018. The Overwatch League was officially terminated in 2023, and one year
+          later, the Overwatch Championship Series was founded. It is unclear how Overwatch 2 will fare in the esports
+          scene in the coming future.
+        </p>
+
+        <h3>Game Type:</h3>
+        <p>First-person Shooter</p>
+
+
+        <!-- Team Information -->
+        <h1>Top 3 Teams</h1>
+        <div class="tabs">
+          <button class="tab-button active" onclick="showTab('team1')">Team 1</button>
+          <button class="tab-button" onclick="showTab('team2')">Team 2</button>
+          <button class="tab-button" onclick="showTab('team3')">Team 3</button>
+        </div>
+
+        <div class="tab-content" id="team1">
+          <table>
+            <thead>
+            <tr>
+              <th colspan="3">Toronto Defiant Active Roster</th>
+            </tr>
+            <tr>
+              <th colspan="3">
+                <img src="../img/teamTDlogo.png" alt="Toronto Defiant Logo"></th>
+            </tr>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Role</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>MER1T</td>
+              <td>Choi Tae-min</td>
+              <td>DPS</td>
+            </tr>
+            <tr>
+              <td>Rupal</td>
+              <td>Rupal Zaman</td>
+              <td>Support</td>
+            </tr>
+            <tr>
+              <td>SOMEONE</td>
+              <td>Ham Jeong-wan</td>
+              <td>Tank</td>
+            </tr>
+            <tr>
+              <td>Sugarfree</td>
+              <td>Kamden Hijada</td>
+              <td>DPS</td>
+            </tr>
+            <tr>
+              <td>Vega</td>
+              <td>Diego Moran</td>
+              <td>Support</td>
+            </tr>
+
+            </tbody>
+          </table>
+
+          <h2>Tournament Statistics</h2>
+          <p>1st Place: 5 major</p>
+          <p>2nd Place: 1 major</p>
+          <p>3rd Place: 4 major</p>
+
+        </div>
+
+        <div class="tab-content" id="team2" style="display: none;">
+          <table>
+            <thead>
+            <tr>
+              <th colspan="3">Spacestation Gaming Active Roster</th>
+            </tr>
+            <tr>
+              <th colspan="3">
+                <img src="../img/teamSSGlogo.png" alt="Spacestation Gaming Logo"></th>
+            </tr>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Role</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>Backbone</td>
+              <td>Jamie O'Neill</td>
+              <td>DPS</td>
+            </tr>
+            <tr>
+              <td>FunnyAstro</td>
+              <td>Daniel Hathaway</td>
+              <td>Support</td>
+            </tr>
+            <tr>
+              <td>Hadi</td>
+              <td>Hadi Daniel Bleinagel</td>
+              <td>Tank</td>
+            </tr>
+            <tr>
+              <td>KSAA</td>
+              <td>Alhumaidi Alruwaili</td>
+              <td>Tank</td>
+            </tr>
+            <tr>
+              <td>Landon</td>
+              <td>Landon McGee</td>
+              <td>Support</td>
+            </tr>
+            <tr>
+              <td>Seicoe</td>
+              <td>Maximilian Otter</td>
+              <td>DPS</td>
+            </tr>
+            <tr>
+              <td>SparkR</td>
+              <td>William Andersson</td>
+              <td>DPS</td>
+            </tr>
+
+            </tbody>
+          </table>
+
+          <h2>Tournament Statistics</h2>
+          <p>1st Place: 4 major</p>
+          <p>2nd Place: 0 </p>
+          <p>3rd Place: 2 major</p>
+
+        </div>
+
+        <div class="tab-content" id="team3" style="display: none;">
+          <table>
+            <thead>
+            <tr>
+              <th colspan="3">ENCE Active Roster</th>
+            </tr>
+            <tr>
+              <th colspan="3">
+                <img src="../img/teamENCElogo.png" alt="ENCE Logo"></th>
+            </tr>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Role</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>Kai</td>
+              <td>Kai Collins</td>
+              <td>DPS</td>
+            </tr>
+            <tr>
+              <td>kevster</td>
+              <td>Kevin Persson</td>
+              <td>DPS</td>
+            </tr>
+            <tr>
+              <td>Vestola</td>
+              <td>Ilari Vestola</td>
+              <td>Tank</td>
+            </tr>
+            <tr>
+              <td>Chase</td>
+              <td>Oleksandr Okseschenko</td>
+              <td>Tank</td>
+            </tr>
+            <tr>
+              <td>Skairipa</td>
+              <td>Robert Lupsa</td>
+              <td>Support</td>
+            </tr>
+            <tr>
+              <td>WMaimone</td>
+              <td>William Maimone</td>
+              <td>DPS</td>
+            </tr>
+            <tr>
+              <td>Kellex</td>
+              <td>Kristian Keller</td>
+              <td>Support</td>
+            </tr>
+
+            </tbody>
+          </table>
+
+          <h2>Tournament Statistics</h2>
+          <p>1st Place: 3 major</p>
+          <p>2nd Place: 7 major</p>
+          <p>3rd Place: 1 major</p>
+
+        </div>
+
+        <h1>More Info</h1>
+        <ul class="team-links">
+          <li><a href="https://overwatch.blizzard.com/" target="_blank">https://overwatch.blizzard.com/</a></li>
+          <li><a href="https://esports.overwatch.com/" target="_blank">https://esports.overwatch.com/</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Overwatch" target="_blank">https://en.wikipedia.org/wiki/Overwatch</a></li>
+        </ul>
+      </div>
+    </main>
+
+    <footer>
+      Made by Carlianne Mickle for CSC3332 Final Project (Fall 2024)
+    </footer>
+  </body>
+
+</html>

@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Information about Valorant Esports">
+    <meta name="keywords" content="Esports, Valorant, Teams, Statistics, Records">
+
+    <title>Esports - Valorant</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <script type="text/javascript">
+      <!--
+        let index = 0;
+        var banner_imgs = ["../img/val1.png", "../img/val2.png", "../img/val3.png","../img/val4.png","../img/val5.png"];
+        // Cycle through banner images sequentially
+        function cycleBanners() {
+          document.getElementById('banners').src = window.banner_imgs[index];
+          index = (index + 1) % window.banner_imgs.length;
+          setTimeout(cycleBanners, 5000);
+        }
+
+        // Allow user to select different team tables.
+        function showTab(tabId) {
+          // Hides all tab contents until one is selected.
+          const tabContents = document.querySelectorAll('.tab-content');
+          tabContents.forEach(tabContent => {
+            tabContent.style.display = 'none';
+          });
+
+          // Remove active class from all buttons
+          const tabButtons = document.querySelectorAll('.tab-button');
+          tabButtons.forEach(button => {
+            button.classList.remove('active');
+          });
+
+          // Shows the tab selected by the user
+          document.getElementById(tabId).style.display = 'block';
+          // Sets the clicked tab to active
+          event.target.classList.add('active');
+        }
+
+        // Ensure the default tab content is visible
+        document.addEventListener('DOMContentLoaded', () => {
+          document.getElementById('team1').style.display = 'block';
+        });
+      //-->
+    </script>
+
+  </head>
+
+  <body onload="cycleBanners()">
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <ul class="navbar-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="league_of_legends.html">League of Legends</a></li>
+      <li><a href="dota.html">Dota 2</a></li>
+      <li><a href="counter-strike.html">Counter-Strike 2</a></li>
+      <li><a href="valorant.html">Valorant</a></li>
+      <li><a href="overwatch.html">Overwatch 2</a></li>
+    </ul>
+  </nav>
+
+    <!-- Start Page Content -->
+    <main class="content">
+      <div class="text-area">
+
+        <!-- Banner Images -->
+        <div class="banner">
+          <img id="banners" src="../img/val1.png" alt="Valorant Picture Reel">
+        </div>
+
+        <!-- Game Info -->
+        <h1>Valorant</h1>
+        <p>
+          Valorant was released on June 2, 2020 and is free-to-play. It has 3 game modes: Plant/Defuse, Deathmatch,
+          and Custom Games.
+        </p>
+        <p>
+          In Plant/Defuse, two teams comprised of five players work together to attack or defend designated points of
+          interest on the map. A team can win the round if they eliminate all enemy players. This game mode can be
+          played competitively or casually.
+          Deathmatch is divided into two modes: free-for-all or team-based. The goal is to reach a certain kill-count
+          before the timer runs out.
+          In Custom Games, players can configure maps, game modes, and objective to their liking, and invite friends
+          to play.
+        </p>
+        <p>
+          Players can choose to play as any of the 22 Agents available in the game, with each Agent having distinct
+          abilities. It is up to the players to devise strategies and team compositions that will counter the enemy
+          team.
+          In some game modes, players are rewarded with in-game currency in order to purchase weapons, equipment, and
+          abilities.
+        </p>
+        <h3>Game Type:</h3>
+        <p>First-person Shooter</p>
+
+
+        <!-- Team Information -->
+        <h1>Top 3 Teams</h1>
+        <div class="tabs">
+          <button class="tab-button active" onclick="showTab('team1')">Team 1</button>
+          <button class="tab-button" onclick="showTab('team2')">Team 2</button>
+          <button class="tab-button" onclick="showTab('team3')">Team 3</button>
+        </div>
+
+        <div class="tab-content" id="team1">
+          <table>
+            <thead>
+            <tr>
+              <th colspan="2">Team Heretics Active Roster</th>
+            </tr>
+            <tr>
+              <th colspan="2">
+                <img src="../img/teamTHlogo.png" alt="Team Heretics Logo"></th>
+            </tr>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>Boo</td>
+              <td>Ričardas Lukaševičius</td>
+            </tr>
+            <tr>
+              <td>benjyfishy</td>
+              <td>Benjy David Fish</td>
+            </tr>
+            <tr>
+              <td>MiniBoo</td>
+              <td>Dominykas Lukaševičius</td>
+            </tr>
+            <tr>
+              <td>RieNs</td>
+              <td>Enes Ecirli</td>
+            </tr>
+            <tr>
+              <td>Wo0t</td>
+              <td>Mert Alkan</td>
+            </tr>
+          </table>
+
+          <h2>Tournament Statistics</h2>
+          <p>1st Place: 7</p>
+          <p>2nd Place: 6 (2 major)</p>
+          <p>3rd Place: 1</p>
+
+        </div>
+
+        <div class="tab-content" id="team2" style="display: none;">
+          <table>
+            <thead>
+            <tr>
+              <th colspan="2">EDward Gaming Active Roster</th>
+            </tr>
+            <tr>
+              <th colspan="2">
+                <img src="../img/teamEDGlogo.png" alt="EDward Gaming Logo"></th>
+            </tr>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>CHICHOO</td>
+              <td>Wan Shunzhi</td>
+            </tr>
+            <tr>
+              <td>nobody</td>
+              <td>Wang Senxu</td>
+            </tr>
+            <tr>
+              <td>ZmjjKK</td>
+              <td>Zheng Yongkang</td>
+            </tr>
+            <tr>
+              <td>Smoggy</td>
+              <td>Zhang Zhao</td>
+            </tr>
+            <tr>
+              <td>WoodAy1</td>
+              <td>Lin Weihong</td>
+            </tr>
+            <tr>
+              <td>S1Mon</td>
+              <td>Hsieh Meng-hsun</td>
+            </tr>
+            </tbody>
+          </table>
+
+          <h2>Tournament Statistics</h2>
+          <p>1st Place: 13 (1 major)</p>
+          <p>2nd Place: 5 </p>
+          <p>3rd Place: 1</p>
+
+          <h2>Records</h2>
+          <p>The first Chinese team to win Champions (2024).</p>
+
+        </div>
+
+        <div class="tab-content" id="team3" style="display: none;">
+          <table>
+            <thead>
+            <tr>
+              <th colspan="2">Gen.G Active Roster</th>
+            </tr>
+            <tr>
+              <th colspan="2">
+                <img src="../img/teamGGlogo.png" alt="Gen.G Logo"></th>
+            </tr>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>t3xture</td>
+              <td>Kim Na-ra</td>
+            </tr>
+            <tr>
+              <td>Karon</td>
+              <td>Kim Won-tae</td>
+            </tr>
+            <tr>
+              <td>Munchkin</td>
+              <td>Byeon Sang-beom</td>
+            </tr>
+            <tr>
+              <td>yoman</td>
+              <td>Chae Young-mun</td>
+            </tr>
+            <tr>
+              <td>Foxy9</td>
+              <td>Jung Jae-sung</td>
+            </tr>
+            </tbody>
+          </table>
+
+          <h2>Tournament Statistics</h2>
+          <p>1st Place: 8 (1 major)</p>
+          <p>2nd Place: 5 (1 major)</p>
+          <p>3rd Place: 2</p>
+
+        </div>
+
+        <h1>More Info</h1>
+        <ul class="team-links">
+          <li><a href="https://playvalorant.com/" target="_blank">https://playvalorant.com/</a></li>
+          <li><a href="https://valorantesports.com/" target="_blank">https://valorantesports.com/</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Valorant" target="_blank">https://en.wikipedia.org/wiki/Valorant</a></li>
+        </ul>
+      </div>
+    </main>
+
+    <footer>
+      Made by Carlianne Mickle for CSC3332 Final Project (Fall 2024)
+    </footer>
+  </body>
+
+</html>

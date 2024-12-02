@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Information about Dota 2 Esports">
+    <meta name="keywords" content="Esports, Dota 2, Teams, Statistics, Records">
+
+    <title>Esports - Dota 2</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <script type="text/javascript">
+      <!--
+        let index = 0;
+        var banner_imgs = ["../img/dota1.png", "../img/dota2.png", "../img/dota3.png","../img/dota4.png","../img/dota5.png"];
+        // Cycle through banner images sequentially
+        function cycleBanners() {
+          document.getElementById('banners').src = window.banner_imgs[index];
+          index = (index + 1) % window.banner_imgs.length;
+          setTimeout(cycleBanners, 5000);
+        }
+
+      // Allow user to select different team tables.
+      function showTab(tabId) {
+        // Hides all tab contents until one is selected.
+        const tabContents = document.querySelectorAll('.tab-content');
+        tabContents.forEach(tabContent => {
+          tabContent.style.display = 'none';
+        });
+
+        // Remove active class from all buttons
+        const tabButtons = document.querySelectorAll('.tab-button');
+        tabButtons.forEach(button => {
+          button.classList.remove('active');
+        });
+
+        // Shows the tab selected by the user
+        document.getElementById(tabId).style.display = 'block';
+        // Sets the clicked tab to active
+        event.target.classList.add('active');
+      }
+
+      // Ensure the default tab content is visible
+      document.addEventListener('DOMContentLoaded', () => {
+        document.getElementById('team1').style.display = 'block';
+      });
+      //-->
+    </script>
+  </head>
+
+  <body onload="cycleBanners()">
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <ul class="navbar-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="league_of_legends.html">League of Legends</a></li>
+        <li><a href="dota.html">Dota 2</a></li>
+        <li><a href="counter-strike.html">Counter-Strike 2</a></li>
+        <li><a href="valorant.html">Valorant</a></li>
+        <li><a href="overwatch.html">Overwatch 2</a></li>
+      </ul>
+    </nav>
+
+    <!-- Start Page Content -->
+    <main class="content">
+      <div class="text-area">
+
+        <!-- Banner Images -->
+        <div class="banner">
+          <img id="banners" src="../img/dota1.png" alt="Dota Picture Reel">
+        </div>
+
+        <!-- Game Information -->
+        <h1>Dota 2</h1>
+        <p>Released July 9, 2013.</p>
+        <p>
+          Dota matches involve two teams of five players. Each player selects a hero with unique abilities that
+          compliment their team's chosen strategy. Teams must work together to protect their base and coordinate
+          attacks on enemy bases and structures in order to win the game. Dota currently has 126 unique heroes and over
+          15 different game modes.
+        </p>
+        <p>
+          Defense of the Ancients (the very first Dota game), while not the first MOBA game, is often referred to as
+          the most influential MOBA game that popularized the genre.
+        </p>
+        <p>
+          Dota 2 is one of the largest esports titles in the world and holds its major tournament, The International,
+          annually.
+        </p>
+
+        <h3>Game Type:</h3>
+        <p>Multiplayer Online Battle Arena (MOBA)</p>
+
+        <!-- Team Information -->
+        <h1>Top 3 Teams (2024)</h1>
+        <div class="tabs">
+          <button class="tab-button active" onclick="showTab('team1')">Team 1</button>
+          <button class="tab-button" onclick="showTab('team2')">Team 2</button>
+          <button class="tab-button" onclick="showTab('team3')">Team 3</button>
+        </div>
+
+        <div class="tab-content" id="team1">
+          <table>
+            <thead>
+            <tr>
+              <th colspan="3">Virtus.pro Active Roster</th>
+            </tr>
+            <tr>
+              <th colspan="3">
+                <img src="../img/teamVPlogo.png" alt="Virtus.pro Logo"></th>
+            </tr>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Position</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>Kiritych</td>
+              <td>Ilya Ulyanov</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>squad1x</td>
+              <td>Ilya Kuvaldin</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>Noticed</td>
+              <td>Evgeniy Ignatenko</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>Antares</td>
+              <td>Vladislav Kertman</td>
+              <td>4</td>
+            </tr>
+            </tbody>
+          </table>
+
+          <h2>Tournament Statistics</h2>
+          <p>1st Place: 36 (8 major)</p>
+          <p>2nd Place: 24 (5 major)</p>
+          <p>3rd Place: 20 (3 major)</p>
+
+          <h2>Records</h2>
+          <p>Virtus.pro has won over 100 gold, 170 silver, and 220 bronze medals across 10 different esports
+            games. </p>
+
+        </div>
+
+        <div class="tab-content" id="team2" style="display: none;">
+          <table>
+            <thead>
+            <tr>
+              <th colspan="3">Team Secret Active Roster</th>
+            </tr>
+            <tr>
+              <th colspan="3">
+                <img src="../img/teamTSlogo.png" alt="Team Secret Logo"></th>
+            </tr>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Position</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>423</td>
+              <td>Altanginj Bilguun</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>Ainkrad</td>
+              <td>Aliaksei Dziveyeuski</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>seimei</td>
+              <td>Munkhjin Batsaikhan</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>Kyzko</td>
+              <td>Misha Galkin</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>Puppey</td>
+              <td>Clement Ivanov</td>
+              <td>5</td>
+            </tr>
+            </tbody>
+          </table>
+
+          <h2>Tournament Statistics</h2>
+          <p>1st Place: 32 (9 major)</p>
+          <p>2nd Place: 9 (4 major) </p>
+          <p>3rd Place: 8 (1 major)</p>
+
+          <h2>Records</h2>
+          <p>Player "Puppey" holds the international record of four grand finals appearances, six top 4 placements,
+            and nine top 8 placements.</p>
+
+        </div>
+
+        <div class="tab-content" id="team3" style="display: none;">
+          <table>
+            <thead>
+            <tr>
+              <th colspan="3">OG Active Roster</th>
+            </tr>
+            <tr>
+              <th colspan="3">
+                <img src="../img/teamOGlogo.png" alt="OG Logo"></th>
+            </tr>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Position</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>23savage</td>
+              <td>Nuengnara Teeramahanon</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>Nine</td>
+              <td>Leon Kirilin</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>Wisper</td>
+              <td>Adrián Céspedes Dobles</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>Ari</td>
+              <td>Matthew Walker</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>xNova</td>
+              <td>Yap Jian Wei</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>Ceb</td>
+              <td>Sébastien Debs</td>
+              <td>5</td>
+            </tr>
+
+            </tbody>
+          </table>
+
+          <h2>Tournament Statistics</h2>
+          <p>1st Place: 15 (9 major)</p>
+          <p>2nd Place: 12</p>
+          <p>3rd Place: 11 (2 major)</p>
+
+          <h2>Records</h2>
+          <p>The first team to win four Major Championships.</p>
+          <p>The first team to win back-to-back International Championships.</p>
+
+        </div>
+
+        <h1>More Info</h1>
+        <ul class="team-links">
+          <li><a href="https://www.dota2.com/" target="_blank">https://www.dota2.com/</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Dota_2" target="_blank">https://en.wikipedia.org/wiki/Dota_2</a></li>
+          <li><a href="https://www.dota2.com/esports" target="_blank">https://www.dota2.com/esports</a></li>
+        </ul>
+      </div>
+    </main>
+
+    <footer>
+      Made by Carlianne Mickle for CSC3332 Final Project (Fall 2024)
+    </footer>
+  </body>
+
+</html>

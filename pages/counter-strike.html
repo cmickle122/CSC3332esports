@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Information about Counter-Strike 2 Esports">
+    <meta name="keywords" content="Esports, Counter-Strike 2, Teams, Statistics, Records">
+
+    <title>Esports - Counter-Strike 2</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <script type="text/javascript">
+      <!--
+      let index = 0;
+      var banner_imgs = ["../img/cs1.png", "../img/cs2.png", "../img/cs3.png","../img/cs4.png","../img/cs5.png"];
+      // Cycle through banner images sequentially
+      function cycleBanners() {
+        document.getElementById('banners').src = window.banner_imgs[index];
+        index = (index + 1) % window.banner_imgs.length;
+        setTimeout(cycleBanners, 5000);
+      }
+
+      // Allow user to select different team tables.
+      function showTab(tabId) {
+        // Hides all tab contents until one is selected.
+        const tabContents = document.querySelectorAll('.tab-content');
+        tabContents.forEach(tabContent => {
+          tabContent.style.display = 'none';
+        });
+
+        // Remove active class from all buttons
+        const tabButtons = document.querySelectorAll('.tab-button');
+        tabButtons.forEach(button => {
+          button.classList.remove('active');
+        });
+
+        // Shows the tab selected by the user
+        document.getElementById(tabId).style.display = 'block';
+        // Sets the clicked tab to active
+        event.target.classList.add('active');
+      }
+
+      // Ensure the default tab content is visible
+      document.addEventListener('DOMContentLoaded', () => {
+        document.getElementById('team1').style.display = 'block';
+      });
+      //-->
+    </script>
+
+  </head>
+
+  <body onload="cycleBanners()">
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <ul class="navbar-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="league_of_legends.html">League of Legends</a></li>
+        <li><a href="dota.html">Dota 2</a></li>
+        <li><a href="counter-strike.html">Counter-Strike 2</a></li>
+        <li><a href="valorant.html">Valorant</a></li>
+        <li><a href="overwatch.html">Overwatch 2</a></li>
+      </ul>
+    </nav>
+
+    <!-- Start Page Content -->
+    <main class="content">
+      <div class="text-area">
+
+        <!-- Banner Images -->
+        <div class="banner">
+          <img id="banners" src="../img/cs1.png" alt="Counter-Strike Picture Reel">
+        </div>
+
+        <!-- Game Info -->
+        <h1>Counter-Strike 2</h1>
+        <p>
+          Counter-Strike 2 was released on September 27, 2023 and is free-to-play.
+        </p>
+        <p>
+          Players are divided into two teams of five, and each team must work together to complete an objective.
+          Objectives range from rescuing hostages (Hostage Rescue) to planting and defusing bombs (Bomb Defusal)
+          to eliminating the enemy team.
+          The game mode Wingman reduces the players per team to 2. The game features competitive and casual modes
+          for each of these game modes.
+          Players use in-game currency to buy weapons and equipment to use during a match.
+        </p>
+        <p>
+          While Counter-Strike 2 is still relatively new to the esports scene, the franchise is not. In the past
+          20 years, Counter-Strike has been a major player in the esports scene, and known for its tactical gameplay.
+        </p>
+        <p>
+
+        </p>
+        <h3>Game Type:</h3>
+        <p>First-person Shooter</p>
+
+        <!-- Team Information -->
+        <h1>Top 3 Teams</h1>
+        <div class="tabs">
+          <button class="tab-button active" onclick="showTab('team1')">Team 1</button>
+          <button class="tab-button" onclick="showTab('team2')">Team 2</button>
+          <button class="tab-button" onclick="showTab('team3')">Team 3</button>
+        </div>
+
+        <div class="tab-content" id="team1">
+          <table>
+            <thead>
+            <tr>
+              <th colspan="2">Natus Vincere Active Roster</th>
+            </tr>
+            <tr>
+              <th colspan="2">
+                <img src="../img/teamNAVIlogo.png" alt="Natus Vincere Logo"></th>
+            </tr>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>b1t</td>
+              <td>Valerij Vakhovsjkyj</td>
+            </tr>
+            <tr>
+              <td>Aleksib</td>
+              <td>Aleksi Virolainen</td>
+            </tr>
+            <tr>
+              <td>jL</td>
+              <td>Justinas Lekavičius</td>
+            </tr>
+            <tr>
+              <td>iM</td>
+              <td>Mihai Ivan</td>
+            </tr>
+            <tr>
+              <td>w0nderful</td>
+              <td>Ihor Zhdanov</td>
+            </tr>
+          </table>
+
+          <h2>CS2 Tournament Statistics</h2>
+          <p>1st Place: 50 (6 major)</p>
+          <p>2nd Place: 49 (5 major)</p>
+          <p>3rd Place: 13</p>
+
+          <h2>Records</h2>
+          <p>First team to win all three Counter-Strike Major Championships in one Calendar year.</p>
+          <p>Has appeared in all 20 CS:GO and CS2 Major Championships.</p>
+          <p>Made Major Championships playoffs 16 times.</p>
+
+
+        </div>
+
+        <div class="tab-content" id="team2" style="display: none;">
+          <table>
+            <thead>
+            <tr>
+              <th colspan="2">G2 Esports Active Roster</th>
+            </tr>
+            <tr>
+              <th colspan="2">
+                <img src="../img/teamG2logo.png" alt="G2 Esports Logo"></th>
+            </tr>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>huNter-</td>
+              <td>Nemanja Kovač</td>
+            </tr>
+            <tr>
+              <td>NiKo</td>
+              <td>Nikola Kovač</td>
+            </tr>
+            <tr>
+              <td>m0NESY</td>
+              <td>Ilya Osipov</td>
+            </tr>
+            <tr>
+              <td>malbsMd</td>
+              <td>Mario Samayoa</td>
+            </tr>
+            <tr>
+              <td>Snax</td>
+              <td>Janusz Pogorzelski</td>
+            </tr>
+            </tbody>
+          </table>
+
+          <h2>CS2 Tournament Statistics</h2>
+          <p>1st Place: 20 (1 major)</p>
+          <p>2nd Place: 20 (2 major)</p>
+          <p>3rd Place: 6 (1 major)</p>
+
+        </div>
+
+        <div class="tab-content" id="team3" style="display: none;">
+          <table>
+            <thead>
+            <tr>
+              <th colspan="2">Team Vitality Active Roster</th>
+            </tr>
+            <tr>
+              <th colspan="2">
+                <img src="../img/teamVITlogo.png" alt="Team Vitality Logo"></th>
+            </tr>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>apEX</td>
+              <td>Dan Madesclaire</td>
+            </tr>
+            <tr>
+              <td>ZywOo</td>
+              <td>Mathieu Herbaut</td>
+            </tr>
+            <tr>
+              <td>Spinx</td>
+              <td>Lotan Giladi</td>
+            </tr>
+            <tr>
+              <td>flameZ</td>
+              <td>Shahar Shushan</td>
+            </tr>
+            <tr>
+              <td>mezii</td>
+              <td>William Merriman</td>
+            </tr>
+            </tbody>
+          </table>
+
+          <h2>CS2 Tournament Statistics</h2>
+          <p>1st Place: 17 (1 major)</p>
+          <p>2nd Place: 16 (3 major)</p>
+          <p>3rd Place: 4 (2 major)</p>
+
+        </div>
+        <h1>More Info</h1>
+        <ul class="team-links">
+          <li><a href="https://www.counter-strike.net/" target="_blank">https://www.counter-strike.net/</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Counter-Strike" target="_blank">https://en.wikipedia.org/wiki/Counter-Strike</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Counter-Strike_in_esports" target="_blank">https://en.wikipedia.org/wiki/Counter-Strike_in_esports</a></li>
+        </ul>
+      </div>
+    </main>
+
+    <footer>
+      Made by Carlianne Mickle for CSC3332 Final Project (Fall 2024)
+    </footer>
+  </body>
+
+</html>

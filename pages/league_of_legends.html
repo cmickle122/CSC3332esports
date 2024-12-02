@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Information about League of Legends Esports">
+    <meta name="keywords" content="Esports, League of Legends, Teams, Statistics, Records">
+
+    <title>Esports - League of Legends</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <script type="text/javascript">
+      <!--
+        let index = 0;
+        var banner_imgs = ["../img/lol1.png", "../img/lol2.png", "../img/lol3.png","../img/lol4.png","../img/lol5.png"];
+        // Cycle through banner images sequentially
+        function cycleBanners() {
+          document.getElementById('banners').src = window.banner_imgs[index];
+          index = (index + 1) % window.banner_imgs.length;
+          setTimeout(cycleBanners, 5000);
+        }
+
+        // Allow user to select different team tables.
+        function showTab(tabId) {
+          // Hides all tab contents until one is selected.
+          const tabContents = document.querySelectorAll('.tab-content');
+          tabContents.forEach(tabContent => {
+            tabContent.style.display = 'none';
+          });
+
+          // Remove active class from all buttons
+          const tabButtons = document.querySelectorAll('.tab-button');
+          tabButtons.forEach(button => {
+            button.classList.remove('active');
+          });
+
+          // Shows the tab selected by the user
+          document.getElementById(tabId).style.display = 'block';
+          // Sets the clicked tab to active
+          event.target.classList.add('active');
+        }
+
+        // Ensure the default tab content is visible
+        document.addEventListener('DOMContentLoaded', () => {
+          document.getElementById('team1').style.display = 'block';
+        });
+      //-->
+    </script>
+
+  </head>
+
+  <body onload="cycleBanners()">
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <ul class="navbar-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="league_of_legends.html">League of Legends</a></li>
+      <li><a href="dota.html">Dota 2</a></li>
+      <li><a href="counter-strike.html">Counter-Strike 2</a></li>
+      <li><a href="valorant.html">Valorant</a></li>
+      <li><a href="overwatch.html">Overwatch 2</a></li>
+    </ul>
+  </nav>
+
+    <!-- Start Page Content -->
+    <main class="content">
+      <div class="text-area">
+
+        <!-- Banner Images -->
+        <div class="banner">
+          <img id="banners" src="../img/lol1.png" alt="League of Legends Picture Reel">
+        </div>
+
+        <!-- Game Information -->
+        <h1>League of Legends</h1>
+        <p>
+          Released October 27, 2009.
+        </p>
+        <p>
+          A game in which two teams of five players work battle to destroy the other team's base. Each player can choose a
+          character, known as a champion, to play for the duration of the match. Each map is divided into three lanes,
+          top, middle (mid), and bottom (bot), and has team-related structures to protect and destroy. The game boasts
+          a massive roster of characters to choose from, each with their own background lore and unique abilities.
+        </p>
+        <p>
+          There are three different game modes: normal mode, ranked mode, all-random-all-mid. Normal mode is meant for
+          quick, casual games, ranked mode is to increase a players rank in the game. The all-random-all-mid game
+          mode randomly assigns a Champion to each player and are restricted to the middle lane.
+        </p>
+        <p>
+          League of Legends has been a major part of the esports scene since its release, with the League of Legends
+          World Championship being one of the most prestigious esports events. The game also holds regional championship
+          tournaments for North America and Europe, the League of Legends Championship Series and the League of Legends
+          European Championship, respectively.
+        </p>
+        <h3>Game Type:</h3>
+        <p>Multiplayer Online Battle Arena (MOBA)</p>
+
+        <!-- Team Information -->
+        <h1>Top 3 Teams</h1>
+        <div class="tabs">
+          <button class="tab-button active" onclick="showTab('team1')">Team 1</button>
+          <button class="tab-button" onclick="showTab('team2')">Team 2</button>
+          <button class="tab-button" onclick="showTab('team3')">Team 3</button>
+        </div>
+
+        <div class="tab-content" id="team1">
+          <table>
+            <thead>
+            <tr>
+              <th colspan="3">T1 Active Roster</th>
+            </tr>
+            <tr>
+              <th colspan="3">
+                <img src="../img/teamT1logo.png" alt="T1 Logo"></th>
+            </tr>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Role</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>Doran</td>
+              <td>Choi Hyeon-jun</td>
+              <td>Top</td>
+            </tr>
+            <tr>
+              <td>Oner</td>
+              <td>Mun Hyeon-jun</td>
+              <td>Jungle</td>
+            </tr>
+            <tr>
+              <td>Faker</td>
+              <td>Lee Sang-hyeok</td>
+              <td>Mid</td>
+            </tr>
+            <tr>
+              <td>Gumayusi</td>
+              <td>Lee Min-hyung</td>
+              <td>Bot</td>
+            </tr>
+            <tr>
+              <td>Keria</td>
+              <td>Ryu Min-seok</td>
+              <td>Support</td>
+            </tr>
+
+            </tbody>
+          </table>
+
+          <h2>Tournament Statistics</h2>
+          <p>1st Place: 18 (4 major)</p>
+          <p>2nd Place: 12 (2 major)</p>
+          <p>3rd Place: 4 (2 major) </p>
+
+          <h2>Records</h2>
+          <p>T1 has won four World Championships, the most out of all League of Legends pro teams.</p>
+        </div>
+
+        <div class="tab-content" id="team2" style="display: none;">
+          <table>
+            <thead>
+            <tr>
+              <th colspan="3">Gen.G Active Roster</th>
+            </tr>
+            <tr>
+              <th colspan="3">
+                <img src="../img/teamGGlogo.png" alt="Gen.G Logo"></th>
+            </tr>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Role</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>Kiin</td>
+              <td>Kim Ki-in</td>
+              <td>Top</td>
+            </tr>
+            <tr>
+              <td>Canyon</td>
+              <td>Kim Geon-bu</td>
+              <td>Jungle</td>
+            </tr>
+            <tr>
+              <td>Chovy</td>
+              <td>Jeong Ji-hoon</td>
+              <td>Mid</td>
+            </tr>
+            <tr>
+              <td>Ruler</td>
+              <td>Park Jae-hyuk</td>
+              <td>Bot</td>
+            </tr>
+            <tr>
+              <td>Duro</td>
+              <td>Joo Min-kyu</td>
+              <td>Support</td>
+            </tr>
+            </tbody>
+          </table>
+
+          <h2>Tournament Statistics</h2>
+          <p>1st Place: 7 (2 major)</p>
+          <p>2nd Place: 6 (1 major)</p>
+          <p>3rd Place: 2</p>
+
+        </div>
+
+        <div class="tab-content" id="team3" style="display: none;">
+          <table>
+            <thead>
+            <tr>
+              <th colspan="3">Fnatic Active Roster</th>
+            </tr>
+            <tr>
+              <th colspan="3">
+                <img src="../img/teamFNlogo.png" alt="Fnatic Logo"></th>
+            </tr>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Role</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>Oscarinin</td>
+              <td>Óscar Muñoz Jiménez</td>
+              <td>Top</td>
+            </tr>
+            <tr>
+              <td>Razork</td>
+              <td>Iván Martín Díaz</td>
+              <td>Jungle</td>
+            </tr>
+            <tr>
+              <td>Humanoid</td>
+              <td>Marek Brázda</td>
+              <td>Mid</td>
+            </tr>
+
+            </tbody>
+          </table>
+
+          <h2>Tournament Statistics</h2>
+          <p>1st Place: 13 (1 major)</p>
+          <p>2nd Place: 15 (1 major)</p>
+          <p>3rd Place: 9 (1 major)</p>
+
+          <h2>Records</h2>
+            Fnatic was the first team to win the Riot Season 1 Championships (2011).
+        </div>
+
+        <h1>More Info</h1>
+        <ul class="team-links">
+          <li><a href="https://www.leagueoflegends.com/" target="_blank">https://www.leagueoflegends.com/</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/League_of_Legends" target="_blank">https://en.wikipedia.org/wiki/League_of_Legends</a></li>
+          <li><a href="https://lolesports.com/" target="_blank">https://lolesports.com/</a></li>
+        </ul>
+      </div>
+    </main>
+
+    <footer>
+      Made by Carlianne Mickle for CSC3332 Final Project (Fall 2024)
+    </footer>
+  </body>
+
+</html>
